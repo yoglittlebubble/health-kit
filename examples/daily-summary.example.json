@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-24",
+  "sleep_total_min": 412,
+  "sleep_deep_min": 78,
+  "sleep_onset": "2026-10-23T23:42:00+08:00",
+  "hrv": 42,
+  "resting_hr": 56,
+  "steps": 8340,
+  "source": "mock",
+  "fetched_at": "2026-10-24T08:05:12+08:00"
+}

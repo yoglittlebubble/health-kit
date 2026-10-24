@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yoglittlebubble.local/schemas/daily-summary.schema.json",
+  "title": "DailyHealthSummary",
+  "description": "Fixed daily summary JSON consumed by 健康抗炎管家 (Asia/Shanghai calendar day).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "date",
+    "sleep_total_min",
+    "sleep_deep_min",
+    "sleep_onset",
+    "hrv",
+    "resting_hr",
+    "steps",
+    "source",
+    "fetched_at"
+  ],
+  "properties": {
+    "date": {
+      "type": "string",
+      "description": "Calendar date in Asia/Shanghai (YYYY-MM-DD).",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "sleep_total_min": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Total sleep duration in minutes."
+    },
+    "sleep_deep_min": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Deep sleep duration in minutes."
+    },
+    "sleep_onset": {
+      "type": ["string", "null"],
+      "description": "Sleep onset as ISO-8601 datetime or HH:mm (Asia/Shanghai).",
+      "examples": ["2026-10-23T23:42:00+08:00", "23:42"]
+    },
+    "hrv": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Heart-rate variability (ms or device unit as reported; document unit in source notes when known)."
+    },
+    "resting_hr": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Resting heart rate in bpm."
+    },
+    "steps": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Step count for the calendar day."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["huawei_health_kit", "mock"],
+      "description": "Data origin."
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this summary was written (ISO-8601)."
+    }
+  }
+}
