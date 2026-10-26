@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>隐私政策 · HealthKitBridge</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121212; }
+      a { color: #8ab4f8; }
+      code, .box { background: #1e1e1e; border-color: #333; }
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.35rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    @media (prefers-color-scheme: dark) { .meta { color: #aaa; } }
+    ul { padding-left: 1.4rem; }
+    li { margin: 0.35rem 0; }
+    a { color: #1565c0; }
+    code { font-size: 0.9em; padding: 0.1em 0.35em; background: #f4f4f4; border-radius: 3px; }
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      background: #fafafa;
+      margin: 1rem 0;
+    }
+    .todo { color: #b45309; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>隐私政策 · HealthKitBridge</h1>
+  <p class="meta">
+    应用名称：HealthKitBridge（包名 <code>com.yoglittlebubble.healthkit</code>）<br />
+    数据控制者：个人开发者 卢俊晓<br />
+    生效日期：2026-10-26<br />
+    最近更新：2026-10-26
+  </p>
+
+  <div class="box">
+    <strong>公开链接（待发布）</strong><br />
+    <span class="todo">TODO</span>：推送至 GitHub Pages 后，本页预期地址为<br />
+    <code>https://yoglittlebubble.github.io/health-kit/privacy-policy.html</code>
+  </div>
+
+  <p>
+    欢迎使用 HealthKitBridge（以下简称「本应用」或「本服务」）。本隐私政策说明个人开发者
+    <strong>卢俊晓</strong>（以下简称「我们」）如何收集、使用、存储与保护您的个人信息与健康相关数据。
+    使用本服务即表示您已阅读并理解本政策。若您不同意，请停止使用并撤销相关授权。
+  </p>
+
+  <h2>一、开发者与联系方式</h2>
+  <ul>
+    <li>开发者身份：个人开发者（非企业）</li>
+    <li>姓名：卢俊晓</li>
+    <li>所在机构：上海海事大学（能源与动力工程，本科在读）</li>
+    <li>应用包名：<code>com.yoglittlebubble.healthkit</code></li>
+    <li>AppGallery Connect APP ID：<code>6917619950040464521</code></li>
+    <li>联系邮箱：<a href="mailto:wuyansiwuyu@gmail.com">wuyansiwuyu@gmail.com</a></li>
+    <li>联系电话：+86 13817194409</li>
+  </ul>
+  <p>如对本政策或数据处理有疑问、投诉或行使权利，请通过上述邮箱或电话联系我们。</p>
+
+  <h2>二、我们处理的数据范围</h2>
+  <p>
+    本应用通过华为 <strong>Health Kit</strong> 云端接口，在您明确授权后，以<strong>只读</strong>方式读取以下基础健康数据，用于生成个人抗炎健康看板摘要：
+  </p>
+  <ul>
+    <li><strong>睡眠数据</strong>（scope：<code>https://www.huawei.com/healthkit/sleep.read</code>）：如总睡眠时长、深睡时长、入睡时刻等；</li>
+    <li><strong>心率相关数据</strong>（scope：<code>https://www.huawei.com/healthkit/heartrate.read</code>）：如静息心率、心率变异性（HRV）等平台开放字段；</li>
+    <li><strong>步数数据</strong>（scope：<code>https://www.huawei.com/healthkit/step.read</code>）：日历日内步数。</li>
+  </ul>
+  <p>我们<strong>不申请</strong>写权限，也不会向 Health Kit 写入或修改您的健康数据。</p>
+  <p>此外，为实现授权与运维，我们可能处理：</p>
+  <ul>
+    <li>华为账号 OAuth 授权过程中的临时授权码、访问令牌、刷新令牌（仅用于代表您调用 Health Kit，不以明文对外展示）；</li>
+    <li>技术日志（如请求时间、错误码），不含健康明细正文，且仅用于排查故障。</li>
+  </ul>
+
+  <h2>三、处理目的与法律依据</h2>
+  <p>数据处理目的仅限于：</p>
+  <ul>
+    <li>为您本人提供<strong>个人抗炎健康看板</strong>所需的每日结构化摘要；</li>
+    <li>在后端生成并保存按日汇总的 JSON，便于本人查看与健康管理助手消费；</li>
+    <li>保障服务稳定与安全（排查授权失败、接口错误等）。</li>
+  </ul>
+  <p>
+    我们不会将 Health Kit 数据用于广告投放、用户画像营销、向第三方出售，或与本目的无关的用途。
+    处理依据为：您通过华为账号授权页面作出的<strong>明示同意</strong>，以及为实现您主动使用的服务所必需。
+  </p>
+
+  <h2>四、数据如何存储与流转</h2>
+  <ol>
+    <li>您在华为侧完成 Health Kit 授权后，本应用后端（health-kit-bridge）使用授权令牌调用 Health Kit REST 接口拉取上述只读数据。</li>
+    <li>拉取结果按<strong>日历日</strong>（时区 <code>Asia/Shanghai</code>）汇总为 JSON 文件（字段示例：睡眠分钟数、深睡、入睡时刻、HRV、静息心率、步数、来源、拉取时间）。</li>
+    <li>摘要文件保存在开发者可控的后端存储环境中，仅用于上述看板用途；不以公开方式对外分发。</li>
+    <li>后续计划以微信小程序等作为 OAuth 授权入口；授权与数据拉取仍遵循本政策与华为平台规则。</li>
+  </ol>
+
+  <h2>五、共享、转让与公开披露</h2>
+  <ul>
+    <li>我们<strong>不出售</strong>、不出租您的健康数据。</li>
+    <li>除法律法规要求、监管/司法机关依法调取，或为保护人身财产安全所必需外，我们不会向无关第三方共享可识别的健康明细。</li>
+    <li>健康数据来源为华为 Health Kit；华为作为独立服务提供方，其处理适用华为自身隐私政策与用户协议。</li>
+    <li>看板消费方为开发者本人使用的健康抗炎管理工具；不会向未获您授权的外部商业主体转让数据。</li>
+  </ul>
+
+  <h2>六、保留期限与删除</h2>
+  <ul>
+    <li>每日摘要 JSON：在您持续使用服务期间保留，便于历史趋势查看；您可随时要求删除。</li>
+    <li>OAuth 令牌：在授权有效期内保留；撤销授权或您提出删除后，我们将停止拉取并尽快清除本地令牌。</li>
+    <li>技术日志：通常不超过 90 天，或在完成故障排查后删除。</li>
+  </ul>
+  <p>
+    您可通过华为账号 / 运动健康相关设置<strong>撤销对本应用的 Health Kit 授权</strong>；
+    亦可发送邮件至 <a href="mailto:wuyansiwuyu@gmail.com">wuyansiwuyu@gmail.com</a>
+    或拨打 +86 13817194409，要求查阅、更正或删除我们本地保存的摘要与令牌。我们将在核实身份后尽快处理（通常不超过 15 个工作日）。
+  </p>
+
+  <h2>七、安全措施</h2>
+  <p>
+    我们采取合理的技术与管理措施保护数据，包括但不限于：传输尽量使用 HTTPS、密钥与 Client Secret 不进入公开代码仓库、
+    最小权限（仅申请只读基础 scope）、访问控制与按需排查。请注意，任何互联网传输与存储都无法保证绝对安全。
+  </p>
+
+  <h2>八、未成年人</h2>
+  <p>
+    本服务面向具备完全民事行为能力的成年人个人自用场景；不面向未满 14 周岁儿童设计或营销。
+    若您发现未成年人在未获监护人同意的情况下使用本服务，请联系我们，我们将尽快停止处理并删除相关数据。
+  </p>
+
+  <h2>九、跨境传输</h2>
+  <p>
+    健康数据通过华为 Health Kit 云端接口获取；存储与处理地点以开发者部署的后端及华为平台实际区域为准。
+    如未来发生跨境传输，我们将依法履行告知与必要合规义务，并更新本政策。
+  </p>
+
+  <h2>十、政策更新</h2>
+  <p>
+    我们可能因法规、产品或平台要求更新本政策。更新后将在本页面公布修订日期与要点；
+    重大变更时，我们将通过应用内提示或邮件等方式尽量通知您。继续使用即视为知悉更新后的政策（法律另有要求的除外）。
+  </p>
+
+  <h2>十一、适用说明</h2>
+  <p>
+    本应用当前处于个人开发 / 联调与 Health Kit 权限申请阶段，尚未声明已在华为应用市场「已上架」状态。
+    正式对更多用户开放前，我们将继续完善合规材料与公示链接。本政策中文版本为准。
+  </p>
+
+  <p class="meta" style="margin-top:2.5rem;">
+    © 2026 卢俊晓 · HealthKitBridge<br />
+    仓库：<a href="https://github.com/yoglittlebubble/health-kit">https://github.com/yoglittlebubble/health-kit</a>
+  </p>
+</body>
+</html>

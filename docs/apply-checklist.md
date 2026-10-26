@@ -2,6 +2,27 @@
 
 > 骨架与摘要格式可先落地；**真实拉数**必须等 AppGallery Connect 审核通过并拿到 Client ID / Secret。
 
+## 申请材料（仓库内）
+
+底稿与官方表格已放进仓库，填表时以此为准：
+
+| 材料 | 路径 |
+| --- | --- |
+| 隐私政策 | [`docs/legal/privacy-policy.md`](legal/privacy-policy.md)、[`docs/legal/privacy-policy.html`](legal/privacy-policy.html) |
+| 用户协议 | [`docs/legal/user-agreement.md`](legal/user-agreement.md)、[`docs/legal/user-agreement.html`](legal/user-agreement.html) |
+| 采购计划 | [`docs/apply/procurement-plan.md`](apply/procurement-plan.md) |
+| 开发者信息底稿 | [`docs/apply/developer-info.md`](apply/developer-info.md) |
+| 已填个人开发者清单 | [`docs/apply/申请材料清单（个人开发者）-已填.xlsx`](apply/申请材料清单（个人开发者）-已填.xlsx) |
+| 空白个人模板 | [`docs/申请材料清单（个人开发者）.xlsx`](申请材料清单（个人开发者）.xlsx) |
+| 空白企业模板 | [`docs/申请材料清单（企业开发者）.xlsx`](申请材料清单（企业开发者）.xlsx) |
+
+隐私政策与用户协议的**公开 URL 仍是 TODO**，要等 GitHub Pages（或其他托管）启用后才能填进华为表单。Pages 源选 `/docs` 时，站点根路径为：
+
+- `https://yoglittlebubble.github.io/health-kit/privacy-policy.html`
+- `https://yoglittlebubble.github.io/health-kit/user-agreement.html`
+
+对应文件同时放在 `docs/privacy-policy.html`、`docs/user-agreement.html`（与 `docs/legal/` 内副本内容相同），这样 source=`/docs` 会把它们发到站点根。`docs/.nojekyll` 让 Pages 按静态文件原样提供，不经 Jekyll 处理。
+
 ## 1. 开发者与产品类型
 
 1. 打开 [AppGallery Connect](https://developer.huawei.com/consumer/cn/service/josp/agc/index.html) → 我的项目 → 新建/选择项目。

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>用户服务协议 · HealthKitBridge</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121212; }
+      a { color: #8ab4f8; }
+      code, .box { background: #1e1e1e; border-color: #333; }
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.35rem; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
+    @media (prefers-color-scheme: dark) { .meta { color: #aaa; } }
+    ul, ol { padding-left: 1.4rem; }
+    li { margin: 0.35rem 0; }
+    a { color: #1565c0; }
+    code { font-size: 0.9em; padding: 0.1em 0.35em; background: #f4f4f4; border-radius: 3px; }
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      background: #fafafa;
+      margin: 1rem 0;
+    }
+    .todo { color: #b45309; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>用户服务协议 · HealthKitBridge</h1>
+  <p class="meta">
+    应用名称：HealthKitBridge（包名 <code>com.yoglittlebubble.healthkit</code>）<br />
+    服务提供方：个人开发者 卢俊晓<br />
+    生效日期：2026-10-26<br />
+    最近更新：2026-10-26
+  </p>
+
+  <div class="box">
+    <strong>公开链接（待发布）</strong><br />
+    <span class="todo">TODO</span>：推送至 GitHub Pages 后，本页预期地址为<br />
+    <code>https://yoglittlebubble.github.io/health-kit/user-agreement.html</code>
+  </div>
+
+  <p>
+    本《用户服务协议》（以下简称「本协议」）是您与个人开发者<strong>卢俊晓</strong>（以下简称「我们」）之间，
+    就使用 HealthKitBridge 及相关后端服务（health-kit-bridge，以下简称「本服务」）所订立的协议。
+    请在使用前仔细阅读。您开始使用、登录或完成华为 Health Kit 授权，即视为接受本协议。
+  </p>
+
+  <h2>一、服务说明</h2>
+  <ol>
+    <li>本服务用于在您授权后，通过华为 Health Kit 只读接口拉取睡眠、心率/HRV、步数等基础数据，生成按日结构化摘要，供个人抗炎健康看板使用。</li>
+    <li>产品形态包括：鸿蒙/移动端壳应用（包名 <code>com.yoglittlebubble.healthkit</code>）、后端桥接服务，以及计划中的微信小程序 OAuth 入口。</li>
+    <li>本服务为<strong>个人开发 / 学习与自用健康管理</strong>场景，当前不提供付费订阅，也不以医疗机构或诊疗服务名义运营。</li>
+    <li>本服务<strong>不构成</strong>医疗诊断、处方或专业医疗建议；健康决策请咨询合格医务人员。</li>
+  </ol>
+
+  <h2>二、账号与授权</h2>
+  <ol>
+    <li>使用 Health Kit 相关能力需您持有有效的华为账号，并在华为授权页面明确同意本应用申请的只读权限。</li>
+    <li>您应妥善保管账号与设备。因您自身原因导致的授权被滥用，由您自行承担责任（法律另有规定除外）。</li>
+    <li>您可随时在华为侧撤销对本应用的授权；撤销后，本服务将无法继续拉取新的 Health Kit 数据。</li>
+  </ol>
+
+  <h2>三、用户行为规范</h2>
+  <p>您承诺：</p>
+  <ul>
+    <li>仅将本服务用于合法、正当的个人健康管理目的；</li>
+    <li>不利用本服务从事侵害他人权益、破坏平台安全、逆向破解、滥用接口配额等行为；</li>
+    <li>不将本服务用于对未成年人进行不当数据收集；</li>
+    <li>如实提供联系所需信息，不冒用他人身份申请权限。</li>
+  </ul>
+
+  <h2>四、隐私与数据</h2>
+  <p>
+    我们对个人信息与健康相关数据的处理规则详见《隐私政策》。
+    隐私政策构成本协议的重要组成部分；二者不一致时，就个人信息处理事项以隐私政策为准。
+  </p>
+  <p>
+    隐私政策公开链接（待发布）：
+    <code>https://yoglittlebubble.github.io/health-kit/privacy-policy.html</code>
+    （<span class="todo">TODO</span>：GitHub Pages 上线前请以仓库 <code>docs/legal/privacy-policy.html</code> 为准）。
+  </p>
+
+  <h2>五、知识产权</h2>
+  <p>
+    本服务所含软件、文档、界面与相关权利归开发者或权利人所有。
+    开源组件遵循其各自许可证。未经许可，您不得对本服务进行商业性复制、出租或反向工程（法律允许的除外）。
+  </p>
+
+  <h2>六、免责与责任限制</h2>
+  <ol>
+    <li>本服务按「现状」提供。受网络、华为平台策略、设备兼容性等因素影响，我们不保证服务永不中断或数据绝对准确、完整。</li>
+    <li>因华为 Health Kit、操作系统、网络运营商或不可抗力导致的服务异常，我们将在合理范围内协助排查，但不承担由此产生的间接损失（法律强制规定除外）。</li>
+    <li>在法律允许的最大范围内，我们对因使用或无法使用本服务而产生的任何间接、附带或惩罚性损害不承担责任。</li>
+  </ol>
+
+  <h2>七、服务变更、中断与终止</h2>
+  <ol>
+    <li>我们可能根据法规、平台要求或维护需要对服务进行变更、暂停或终止，并尽量提前通知。</li>
+    <li>若您违反本协议或相关法律法规，我们有权暂停或终止向您提供服务，并依法保留追责权利。</li>
+    <li>您可随时停止使用并要求删除本地保存的摘要与令牌（见隐私政策联系方式）。</li>
+  </ol>
+
+  <h2>八、协议变更</h2>
+  <p>
+    我们可能修订本协议，并在本页面公布更新日期。重大变更将尽量通过适当方式提示。
+    若您继续使用，即视为接受修订后的协议；若不同意，请停止使用并撤销授权。
+  </p>
+
+  <h2>九、适用法律与争议解决</h2>
+  <p>
+    本协议的订立、效力、解释与争议解决适用中华人民共和国大陆地区法律（冲突规范除外）。
+    因本协议引起的争议，双方应友好协商；协商不成的，由开发者住所地有管辖权的人民法院诉讼解决。
+  </p>
+
+  <h2>十、联系我们</h2>
+  <ul>
+    <li>开发者：卢俊晓（个人开发者）</li>
+    <li>机构：上海海事大学</li>
+    <li>邮箱：<a href="mailto:wuyansiwuyu@gmail.com">wuyansiwuyu@gmail.com</a></li>
+    <li>电话：+86 13817194409</li>
+    <li>代码仓库：<a href="https://github.com/yoglittlebubble/health-kit">https://github.com/yoglittlebubble/health-kit</a></li>
+  </ul>
+
+  <p class="meta" style="margin-top:2.5rem;">
+    © 2026 卢俊晓 · HealthKitBridge<br />
+    本协议中文版本为准。应用市场「已上架」状态以 AppGallery Connect 实际显示为准；本协议不声称当前已正式上架。
+  </p>
+</body>
+</html>

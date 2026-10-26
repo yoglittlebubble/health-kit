@@ -84,4 +84,4 @@ npm start                 # :8787
 2. `pullDailySummary` 调 Health Kit REST（非 mock）。
 3. 定时任务每日自动 `POST /pull`，把 JSON 交给健康抗炎管家。
 
-申请步骤与链接：[`docs/apply-checklist.md`](docs/apply-checklist.md)。
+申请步骤与链接：[`docs/apply-checklist.md`](docs/apply-checklist.md)。申请材料底稿见 [`docs/apply`](docs/apply)，隐私政策与用户协议见 [`docs/legal`](docs/legal)（公开 URL 待 GitHub Pages）。
